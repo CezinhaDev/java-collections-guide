@@ -1,53 +1,45 @@
 # 🗂️ JAVA COLLECTIONS: LIST, SET E MAP
 
-Este projeto contém exemplos práticos utilizando as principais estruturas de dados do Java: **List**, **Set** e **Map**. Ele foi criado com o objetivo de facilitar o entendimento dessas coleções e suas diferenças no armazenamento e manipulação de dados.
+Projeto criado para demonstrar, com exemplos práticos, como funcionam as principais coleções do Java: **List**, **Set** e **Map**. Ideal para quem está aprendendo sobre estruturas de dados e deseja entender as diferenças no armazenamento e manipulação de elementos.
 
 ---
 
-## 🚀 FUNCIONALIDADES
+## 🚀 Funcionalidades
 
-✅ Demonstra o uso de:
+✅ Uso das principais coleções:
 
-- 📋 `List` – permite duplicatas e mantém a ordem  
-- 🚫 `Set` – não permite duplicatas  
-- 🔑 `Map` – armazena dados no formato chave-valor
-
-Cada estrutura é apresentada com um exemplo funcional, direto no console.
+- 📋 **List** – aceita elementos duplicados e mantém a ordem de inserção  
+- 🚫 **Set** – não permite duplicatas e não garante ordem  
+- 🔑 **Map** – estrutura de chave-valor, não permite chaves duplicadas
 
 ---
 
-## 🧑‍💻 COMO FUNCIONA
+## 🧠 O Que Você Vai Aprender
 
-O código demonstra:
-
-1. Como adicionar, acessar e imprimir elementos em uma `List`  
-2. Como garantir unicidade de elementos com `Set`  
-3. Como associar valores com chaves usando `Map`
+- Inserção e acesso de dados em uma `List`
+- Garantia de unicidade com `Set`
+- Organização de informações com `Map` (chave-valor)
+- Impressão de dados no console com clareza
+- Diferenças entre `ArrayList`, `HashSet` e `HashMap`
 
 ---
 
-## 📥 EXEMPLO DE USO
+## 💻 Exemplo de Uso no Console
 
-```bash
-João
-Maria
-João
-[Mouse, Teclado, Notebook]  // ordem pode variar
-{1=Carlos, 2=Ana, 3=Carlos}
-Carlos
-Ana
-Carlos
-📌 ESTRUTURAS USADAS
-📋 LIST (ArrayList)
-java
-Copiar
-Editar
+### 📋 List (ArrayList)
+```java
 List<String> funcionarios = new ArrayList<>();
 funcionarios.add("João");
 funcionarios.add("Maria");
 funcionarios.add("João"); // duplicado permitido
-System.out.println(funcionarios.get(0));
-🚫 SET (HashSet)
+System.out.println(funcionarios); 
+🧾 Saída esperada:
+
+csharp
+Copiar
+Editar
+[João, Maria, João]
+🚫 Set (HashSet)
 java
 Copiar
 Editar
@@ -57,7 +49,13 @@ produtos.add("Mouse");
 produtos.add("Teclado");
 produtos.add("Mouse"); // duplicado ignorado
 System.out.println(produtos);
-🔑 MAP (HashMap)
+🧾 Saída esperada (ordem pode variar):
+
+arduino
+Copiar
+Editar
+[Notebook, Mouse, Teclado]
+🔑 Map (HashMap)
 java
 Copiar
 Editar
@@ -66,45 +64,45 @@ clientes.put(1, "Carlos");
 clientes.put(2, "Ana");
 clientes.put(3, "Carlos");
 System.out.println(clientes.get(1));
-⚠️ OBSERVAÇÕES
-List aceita duplicatas e mantém a ordem.
+🧾 Saída esperada:
 
-Set não aceita elementos repetidos.
+nginx
+Copiar
+Editar
+Carlos
+📌 Observações Importantes
+List: aceita duplicatas e mantém a ordem de inserção.
 
-Map não aceita chaves duplicadas, mas permite valores repetidos.
+Set: não aceita elementos repetidos.
 
-🛠️ TECNOLOGIAS UTILIZADAS
-Java 17+
+Map: não aceita chaves duplicadas, mas aceita valores repetidos.
 
-IDE: IntelliJ IDEA (ou Eclipse, VSCode etc.)
+🛠️ Tecnologias Utilizadas
+☕ Java 17+
 
-Execução via terminal (console)
+🧠 IDE: IntelliJ IDEA / Eclipse / VSCode
 
-📂 ESTRUTURA DO PROJETO
+📟 Execução via terminal (console)
+
+📂 Estrutura do Projeto
 Copiar
 Editar
 📦 collections-java
  ┣ 📜 Principal.java
  ┗ 📜 README.md
-📌 APRENDIZADOS
-Este projeto me ajudou a praticar:
+📈 Aprendizados
+✅ Diferenças entre List, Set e Map
+✅ Como lidar com elementos duplicados
+✅ Visualização e testes no console
+✅ Boas práticas no uso das coleções Java
 
-Uso de coleções com List, Set e Map
+🤝 Contribuição
+Contribuições são muito bem-vindas!
+Sinta-se à vontade para clonar o repositório, testar os exemplos, criar pull requests ou abrir issues com sugestões.
 
-Diferenças entre estruturas que permitem ou não duplicatas
+📫 Contato
+Desenvolvido com 💻 e ☕ por César Henrique
 
-Manipulação de dados com ArrayList, HashSet e HashMap
-
-Impressão de dados no console com clareza
-
-🤝 CONTRIBUIÇÃO
-Sinta-se à vontade para clonar o repositório, testar os exemplos e propor melhorias! 💬
-
-📫 CONTATO
-Desenvolvido por César Henrique 🧑‍💻
 🔗 LinkedIn
 🔗 GitHub
 
-yaml
-Copiar
-Editar
