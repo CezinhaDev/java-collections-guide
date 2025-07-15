@@ -1,55 +1,59 @@
 # ☕ Java Collections: List, Set e Map com Exemplos
 
-Este repositório contém um exemplo prático de como utilizar **List**, **Set** e **Map** em Java. São estruturas fundamentais para qualquer desenvolvedor Java, ideais para armazenar e manipular coleções de dados de forma eficiente.
+Este repositório apresenta exemplos práticos de como usar as interfaces **List**, **Set** e **Map** em Java.  
+Essas estruturas são essenciais para armazenar, organizar e manipular dados de forma eficiente.
 
 ---
 
 ## 🔹 LIST
 
-✔️ Permite elementos **duplicados**  
-✔️ Mantém a **ordem de inserção**  
-✔️ Acesso por **índice**
+✅ Permite **elementos duplicados**  
+✅ Mantém a **ordem de inserção**  
+✅ Acesso por **índice**
 
-### 🧪 Exemplo com `ArrayList`
+### 📌 Exemplo com `ArrayList`:
 ```java
 List<String> funcionarios = new ArrayList<>();
 funcionarios.add("João");
 funcionarios.add("Maria");
-funcionarios.add("João"); // permitido (duplicado)
+funcionarios.add("João"); // duplicado permitido
 
 System.out.println(funcionarios.get(0)); // João
 System.out.println(funcionarios.get(1)); // Maria
 System.out.println(funcionarios.get(2)); // João
-🛠️ Métodos comuns:
-add(elemento) – adiciona item
+🛠️ Métodos úteis:
+add(elemento)
 
-get(index) – retorna item da posição
+get(index)
 
-remove(index ou elemento)
+remove(elemento ou index)
 
-size() – tamanho da lista
+size()
 
-contains(elemento) – verifica existência
+contains(elemento)
 
-📌 Dica: Para obter o primeiro e último elemento:
-
+💡 Dica:
+java
+Copiar
+Editar
 String primeiro = funcionarios.get(0);
 String ultimo = funcionarios.get(funcionarios.size() - 1);
-
 🔹 SET
 ❌ Não permite elementos duplicados
-⚠️ Não garante ordenação (dependendo da implementação)
+⚠️ Não garante ordem (dependendo da implementação)
 
-🧪 Exemplo com HashSet
-
+📌 Exemplo com HashSet:
+java
+Copiar
+Editar
 Set<String> produtos = new HashSet<>();
 produtos.add("Notebook");
 produtos.add("Mouse");
 produtos.add("Teclado");
-produtos.add("Mouse"); // será ignorado
+produtos.add("Mouse"); // duplicado será ignorado
 
-System.out.println(produtos); // Ordem pode variar
-🛠️ Métodos comuns:
+System.out.println(produtos); // ordem não garantida
+🛠️ Métodos úteis:
 add(elemento)
 
 remove(elemento)
@@ -60,30 +64,31 @@ size()
 
 isEmpty()
 
-📌 Implementações:
+📎 Implementações:
+HashSet – rápido, sem ordem
 
-HashSet: mais rápido, sem ordem
+LinkedHashSet – mantém ordem de inserção
 
-LinkedHashSet: mantém ordem de inserção
-
-TreeSet: ordena automaticamente
+TreeSet – ordena automaticamente
 
 🔹 MAP
 🔑 Armazena pares chave-valor
 ❌ Não permite chaves duplicadas
-✔️ Valores podem se repetir
+✅ Valores podem se repetir
 
-🧪 Exemplo com HashMap
-
+📌 Exemplo com HashMap:
+java
+Copiar
+Editar
 Map<Integer, String> clientes = new HashMap<>();
 clientes.put(1, "Carlos");
 clientes.put(2, "Ana");
-clientes.put(3, "Carlos"); // valores podem se repetir
+clientes.put(3, "Carlos"); // valor repetido, chave diferente
 
 System.out.println(clientes.get(1)); // Carlos
 System.out.println(clientes.get(2)); // Ana
 System.out.println(clientes.get(3)); // Carlos
-🛠️ Métodos comuns:
+🛠️ Métodos úteis:
 put(chave, valor)
 
 get(chave)
@@ -92,31 +97,37 @@ remove(chave)
 
 containsKey(chave)
 
-keySet() – retorna todas as chaves
+keySet()
 
-values() – retorna todos os valores
+values()
 
-📌 Implementações:
+📎 Implementações:
+HashMap – rápido, sem ordem
 
-HashMap: mais rápido, sem ordem
+LinkedHashMap – mantém ordem de inserção
 
-LinkedHashMap: mantém ordem de inserção
+TreeMap – ordenado por chave
 
-TreeMap: ordena por chave
+📊 Resumo Rápido
+Estrutura	Aceita Duplicados?	Ordenação	Acesso Direto
+List	✅ Sim	✅ Sim	✅ get(index)
+Set	❌ Não	❌/✅	❌ Não
+Map	❌ (chaves)	❌/✅	✅ get(chave)
 
-📌 Resumo Visual
-Estrutura	Duplicados?	Ordenação?	Acesso Direto
-List	✅ Sim	✅ Sim	✅ Sim (get(index))
-Set	❌ Não	❌ Não (HashSet) / ✅ (TreeSet)	❌ Não
-Map	❌ Chave não / ✅ Valor sim	❌ (HashMap) / ✅ (TreeMap)	✅ Por chave (get(key))
-
-✅ Saída do Exemplo
-
+🖨️ Saída esperada do código:
+arduino
+Copiar
+Editar
 João
 Maria
 João
-[Mouse, Teclado, Notebook] // Ordem pode variar
+[Mouse, Teclado, Notebook]  // ordem pode variar
 {1=Carlos, 2=Ana, 3=Carlos}
 Carlos
 Ana
 Carlos
+📚 Referências
+Documentação Oficial – Java Collections
+
+Baeldung – Java Collections
+
