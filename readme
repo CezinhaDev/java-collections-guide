@@ -1,122 +1,108 @@
-# ☕ Java Collections: List, Set e Map com Exemplos
+# 🗂️ JAVA COLLECTIONS: LIST, SET E MAP
 
-Este repositório contém um exemplo prático de como utilizar **List**, **Set** e **Map** em Java. São estruturas fundamentais para qualquer desenvolvedor Java, ideais para armazenar e manipular coleções de dados de forma eficiente.
+Projeto criado para demonstrar, com exemplos práticos, como funcionam as principais coleções do Java: **List**, **Set** e **Map**. Ideal para quem está aprendendo sobre estruturas de dados e deseja entender as diferenças no armazenamento e manipulação de elementos.
 
 ---
 
-## 🔹 LIST
+## 🚀 Funcionalidades
 
-✔️ Permite elementos **duplicados**  
-✔️ Mantém a **ordem de inserção**  
-✔️ Acesso por **índice**
+✅ Uso das principais coleções:
 
-### 🧪 Exemplo com `ArrayList`
+- 📋 **List** – aceita elementos duplicados e mantém a ordem de inserção  
+- 🚫 **Set** – não permite duplicatas e não garante ordem  
+- 🔑 **Map** – estrutura de chave-valor, não permite chaves duplicadas
+
+---
+
+## 🧠 O Que Você Vai Aprender
+
+- Inserção e acesso de dados em uma `List`
+- Garantia de unicidade com `Set`
+- Organização de informações com `Map` (chave-valor)
+- Impressão de dados no console com clareza
+- Diferenças entre `ArrayList`, `HashSet` e `HashMap`
+
+---
+
+## 💻 Exemplo de Uso no Console
+
+### 📋 List (ArrayList)
 ```java
 List<String> funcionarios = new ArrayList<>();
 funcionarios.add("João");
 funcionarios.add("Maria");
-funcionarios.add("João"); // permitido (duplicado)
+funcionarios.add("João"); // duplicado permitido
+System.out.println(funcionarios); 
+🧾 Saída esperada:
 
-System.out.println(funcionarios.get(0)); // João
-System.out.println(funcionarios.get(1)); // Maria
-System.out.println(funcionarios.get(2)); // João
-🛠️ Métodos comuns:
-add(elemento) – adiciona item
-
-get(index) – retorna item da posição
-
-remove(index ou elemento)
-
-size() – tamanho da lista
-
-contains(elemento) – verifica existência
-
-📌 Dica: Para obter o primeiro e último elemento:
-
-String primeiro = funcionarios.get(0);
-String ultimo = funcionarios.get(funcionarios.size() - 1);
-
-🔹 SET
-❌ Não permite elementos duplicados
-⚠️ Não garante ordenação (dependendo da implementação)
-
-🧪 Exemplo com HashSet
-
+csharp
+Copiar
+Editar
+[João, Maria, João]
+🚫 Set (HashSet)
+java
+Copiar
+Editar
 Set<String> produtos = new HashSet<>();
 produtos.add("Notebook");
 produtos.add("Mouse");
 produtos.add("Teclado");
-produtos.add("Mouse"); // será ignorado
+produtos.add("Mouse"); // duplicado ignorado
+System.out.println(produtos);
+🧾 Saída esperada (ordem pode variar):
 
-System.out.println(produtos); // Ordem pode variar
-🛠️ Métodos comuns:
-add(elemento)
-
-remove(elemento)
-
-contains(elemento)
-
-size()
-
-isEmpty()
-
-📌 Implementações:
-
-HashSet: mais rápido, sem ordem
-
-LinkedHashSet: mantém ordem de inserção
-
-TreeSet: ordena automaticamente
-
-🔹 MAP
-🔑 Armazena pares chave-valor
-❌ Não permite chaves duplicadas
-✔️ Valores podem se repetir
-
-🧪 Exemplo com HashMap
-
+arduino
+Copiar
+Editar
+[Notebook, Mouse, Teclado]
+🔑 Map (HashMap)
+java
+Copiar
+Editar
 Map<Integer, String> clientes = new HashMap<>();
 clientes.put(1, "Carlos");
 clientes.put(2, "Ana");
-clientes.put(3, "Carlos"); // valores podem se repetir
+clientes.put(3, "Carlos");
+System.out.println(clientes.get(1));
+🧾 Saída esperada:
 
-System.out.println(clientes.get(1)); // Carlos
-System.out.println(clientes.get(2)); // Ana
-System.out.println(clientes.get(3)); // Carlos
-🛠️ Métodos comuns:
-put(chave, valor)
-
-get(chave)
-
-remove(chave)
-
-containsKey(chave)
-
-keySet() – retorna todas as chaves
-
-values() – retorna todos os valores
-
-📌 Implementações:
-
-HashMap: mais rápido, sem ordem
-
-LinkedHashMap: mantém ordem de inserção
-
-TreeMap: ordena por chave
-
-📌 Resumo Visual
-Estrutura	Duplicados?	Ordenação?	Acesso Direto
-List	✅ Sim	✅ Sim	✅ Sim (get(index))
-Set	❌ Não	❌ Não (HashSet) / ✅ (TreeSet)	❌ Não
-Map	❌ Chave não / ✅ Valor sim	❌ (HashMap) / ✅ (TreeMap)	✅ Por chave (get(key))
-
-✅ Saída do Exemplo
-
-João
-Maria
-João
-[Mouse, Teclado, Notebook] // Ordem pode variar
-{1=Carlos, 2=Ana, 3=Carlos}
+nginx
+Copiar
+Editar
 Carlos
-Ana
-Carlos
+📌 Observações Importantes
+List: aceita duplicatas e mantém a ordem de inserção.
+
+Set: não aceita elementos repetidos.
+
+Map: não aceita chaves duplicadas, mas aceita valores repetidos.
+
+🛠️ Tecnologias Utilizadas
+☕ Java 17+
+
+🧠 IDE: IntelliJ IDEA / Eclipse / VSCode
+
+📟 Execução via terminal (console)
+
+📂 Estrutura do Projeto
+Copiar
+Editar
+📦 collections-java
+ ┣ 📜 Principal.java
+ ┗ 📜 README.md
+📈 Aprendizados
+✅ Diferenças entre List, Set e Map
+✅ Como lidar com elementos duplicados
+✅ Visualização e testes no console
+✅ Boas práticas no uso das coleções Java
+
+🤝 Contribuição
+Contribuições são muito bem-vindas!
+Sinta-se à vontade para clonar o repositório, testar os exemplos, criar pull requests ou abrir issues com sugestões.
+
+📫 Contato
+Desenvolvido com 💻 e ☕ por César Henrique
+
+🔗 LinkedIn
+🔗 GitHub
+
