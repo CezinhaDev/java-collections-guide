@@ -39,7 +39,7 @@ Saída Esperada:
 Set (HashSet)
 Java
 
-Set<String> produtos = new HashSet<>();
+Set<String> produtos = new HashSet<>(); // Não permite duplicatas
 produtos.add("Notebook");
 produtos.add("Mouse");
 produtos.add("Teclado");
