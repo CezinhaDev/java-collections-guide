@@ -1,37 +1,32 @@
-# ✨ Dominando as Coleções Java: List, Set e Map ✨
+# 🗂️ JAVA COLLECTIONS: LIST, SET E MAP
 
-Este projeto é um guia prático para entender as **principais coleções do Java**: `List`, `Set` e `Map`. Ideal para quem está começando a aprender sobre **estruturas de dados** e quer visualizar as diferenças no armazenamento e manipulação de elementos.
-
----
-
-## 🚀 Funcionalidades Apresentadas
-
-Explore as características únicas de cada coleção:
-
-* **`List`**: Aceita **elementos duplicados** e **mantém a ordem de inserção**. Perfeito para sequências onde a posição importa.
-* **`Set`**: **Não permite duplicatas** e **não garante ordem**. Ideal para coleções de elementos únicos.
-* **`Map`**: Uma poderosa estrutura de **chave-valor**. Não permite **chaves duplicadas**, mas **permite valores duplicados**. Excelente para mapear informações.
+Projeto criado para demonstrar, com exemplos práticos, como funcionam as principais coleções do Java: **List**, **Set** e **Map**. Ideal para quem está aprendendo sobre estruturas de dados e deseja entender as diferenças no armazenamento e manipulação de elementos.
 
 ---
 
-## 🎯 O Que Você Vai Aprender
+## 🚀 Funcionalidades
 
-Com este projeto, você vai:
+✅ Uso das principais coleções:
 
-* **Inserir e acessar dados** de forma eficiente com `List`.
-* Garantir a **unicidade de elementos** usando `Set`.
-* Organizar dados de forma intuitiva com `Map` (chave-valor).
-* Realizar a **impressão no console com clareza** para visualizar os resultados.
-* Compreender as **diferenças fundamentais** entre `ArrayList`, `HashSet` e `HashMap`.
+- 📋 **List** – aceita elementos duplicados e mantém a ordem de inserção  
+- 🚫 **Set** – não permite duplicatas e não garante ordem  
+- 🔑 **Map** – estrutura de chave-valor, não permite chaves duplicadas
 
 ---
 
-## 🔍 Exemplos de Uso no Console
+## 🧠 O Que Você Vai Aprender
 
-Veja como as coleções se comportam na prática:
+- Inserção e acesso de dados em uma `List`
+- Garantia de unicidade com `Set`
+- Organização de informações com `Map` (chave-valor)
+- Impressão de dados no console com clareza
+- Diferenças entre `ArrayList`, `HashSet` e `HashMap`
 
-### `List` (`ArrayList`)
+---
 
+## 💻 Exemplo de Uso no Console
+
+### 📋 List (ArrayList)
 ```java
 List<String> funcionarios = new ArrayList<>();
 funcionarios.add("João");
@@ -87,21 +82,12 @@ A importância da visualização e testes no console para validação.
 Boas práticas no uso das coleções Java em cenários reais.
 
 🤝 Contribuição
-Contribuições são MUITO bem-vindas! 🌟
+Contribuições são muito bem-vindas!
+Sinta-se à vontade para clonar o repositório, testar os exemplos, criar pull requests ou abrir issues com sugestões.
 
-Sinta-se à vontade para:
+📫 Contato
+Desenvolvido com 💻 e ☕ por César Henrique
 
-Clonar o repositório e testar os exemplos.
+🔗 LinkedIn
+🔗 GitHub
 
-Criar pull requests com melhorias e novas funcionalidades.
-
-Abrir issues com sugestões, dúvidas ou relatórios de bugs.
-
-Vamos construir algo incrível juntos!
-
-📞 Contato
-Desenvolvido com dedicação por César Henrique
-
-LinkedIn: https://www.linkedin.com/in/c%C3%A9sar-henrique
-
-GitHub: https://github.com/CezinhaDev
