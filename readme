@@ -27,3 +27,77 @@ Compreender as diferenças fundamentais entre ArrayList, HashSet e HashMap.
 Veja como as coleções se comportam na prática:
 
 List (ArrayList)
+Java
+
+List<String> funcionarios = new ArrayList<>();
+funcionarios.add("João");
+funcionarios.add("Maria");
+funcionarios.add("João"); // Duplicado permitido e a ordem é mantida!
+System.out.println(funcionarios);
+Saída Esperada:
+
+[João, Maria, João]
+Set (HashSet)
+Java
+
+Set<String> produtos = new HashSet<>();
+produtos.add("Notebook");
+produtos.add("Mouse");
+produtos.add("Teclado");
+produtos.add("Mouse"); // Duplicado é simplesmente ignorado!
+System.out.println(produtos);
+Saída Esperada (a ordem pode variar):
+
+[Notebook, Mouse, Teclado]
+Map (HashMap)
+Java
+
+Map<Integer, String> clientes = new HashMap<>();
+clientes.put(1, "Carlos");
+clientes.put(2, "Ana");
+clientes.put(3, "Carlos"); // Valor duplicado é permitido, mas a chave é única!
+System.out.println(clientes.get(1));
+Saída Esperada:
+
+Carlos
+🛠️ Tecnologias Utilizadas
+Java 17+: A versão mais recente para aproveitar os recursos modernos.
+
+IDEs: IntelliJ IDEA, Eclipse ou VSCode - utilize a sua preferida!
+
+Execução via terminal (console) para uma visualização rápida e direta.
+
+📂 Estrutura do Projeto
+collections-java/
+├── Principal.java
+└── README.md
+💡 Aprendizados Principais
+Ao explorar este projeto, você fortalecerá seu conhecimento sobre:
+
+As diferenças cruciais entre List, Set e Map.
+
+Estratégias para lidar com elementos duplicados em suas estruturas de dados.
+
+A importância da visualização e testes no console para validação.
+
+Boas práticas no uso das coleções Java em cenários reais.
+
+🤝 Contribuição
+Contribuições são MUITO bem-vindas! 🌟
+
+Sinta-se à vontade para:
+
+Clonar o repositório e testar os exemplos.
+
+Criar pull requests com melhorias e novas funcionalidades.
+
+Abrir issues com sugestões, dúvidas ou relatórios de bugs.
+
+Vamos construir algo incrível juntos!
+
+📞 Contato
+Desenvolvido com dedicação por César Henrique
+
+LinkedIn: https://www.linkedin.com/in/c%C3%A9sar-henrique
+
+GitHub: https://github.com/CezinhaDev
