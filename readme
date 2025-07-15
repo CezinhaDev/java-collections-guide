@@ -1,16 +1,16 @@
-# 🗂️ JAVA COLLECTIONS: LIST, SET E MAP
+🗂️ JAVA COLLECTIONS: LIST, SET E MAP
 
-Projeto criado para demonstrar, com exemplos práticos, como funcionam as principais coleções do Java: **List**, **Set** e **Map**. Ideal para quem está aprendendo sobre estruturas de dados e deseja entender as diferenças no armazenamento e manipulação de elementos.
+Projeto criado para demonstrar, com **exemplos práticos**, como funcionam as principais coleções do Java: **List**, **Set** e **Map**.  
+Ideal para quem está aprendendo sobre **estruturas de dados** e deseja entender as diferenças no armazenamento e manipulação de elementos.
 
 ---
 
-## 🚀 Funcionalidades
+ 🚀 Funcionalidades
 
-✅ Uso das principais coleções:
-
-- 📋 **List** – aceita elementos duplicados e mantém a ordem de inserção  
-- 🚫 **Set** – não permite duplicatas e não garante ordem  
-- 🔑 **Map** – estrutura de chave-valor, não permite chaves duplicadas
+- ✅ Uso das principais coleções:
+  - 📋 **List** – aceita elementos duplicados e mantém a ordem de inserção  
+  - 🚫 **Set** – não permite duplicatas e não garante ordem  
+  - 🔑 **Map** – estrutura de chave-valor, não permite chaves duplicadas
 
 ---
 
@@ -24,25 +24,21 @@ Projeto criado para demonstrar, com exemplos práticos, como funcionam as princi
 
 ---
 
-## 💻 Exemplo de Uso no Console
+ 💻 Exemplo de Uso no Console
 
-### 📋 List (ArrayList)
+ 📋 List (ArrayList)
 ```java
 List<String> funcionarios = new ArrayList<>();
 funcionarios.add("João");
 funcionarios.add("Maria");
 funcionarios.add("João"); // duplicado permitido
-System.out.println(funcionarios); 
-🧾 Saída esperada:
+System.out.println(funcionarios);
 
-csharp
-Copiar
-Editar
+🧾 Saída esperada:
 [João, Maria, João]
+
 🚫 Set (HashSet)
-java
-Copiar
-Editar
+
 Set<String> produtos = new HashSet<>();
 produtos.add("Notebook");
 produtos.add("Mouse");
@@ -50,11 +46,8 @@ produtos.add("Teclado");
 produtos.add("Mouse"); // duplicado ignorado
 System.out.println(produtos);
 🧾 Saída esperada (ordem pode variar):
-
-arduino
-Copiar
-Editar
 [Notebook, Mouse, Teclado]
+
 🔑 Map (HashMap)
 java
 Copiar
@@ -65,17 +58,14 @@ clientes.put(2, "Ana");
 clientes.put(3, "Carlos");
 System.out.println(clientes.get(1));
 🧾 Saída esperada:
-
-nginx
-Copiar
-Editar
 Carlos
+
 📌 Observações Importantes
 List: aceita duplicatas e mantém a ordem de inserção.
 
 Set: não aceita elementos repetidos.
 
-Map: não aceita chaves duplicadas, mas aceita valores repetidos.
+Map: não aceita chaves duplicadas, mas aceita valores duplicados.
 
 🛠️ Tecnologias Utilizadas
 ☕ Java 17+
@@ -84,16 +74,17 @@ Map: não aceita chaves duplicadas, mas aceita valores repetidos.
 
 📟 Execução via terminal (console)
 
-📂 Estrutura do Projeto
-Copiar
-Editar
+
 📦 collections-java
  ┣ 📜 Principal.java
  ┗ 📜 README.md
 📈 Aprendizados
 ✅ Diferenças entre List, Set e Map
+
 ✅ Como lidar com elementos duplicados
+
 ✅ Visualização e testes no console
+
 ✅ Boas práticas no uso das coleções Java
 
 🤝 Contribuição
@@ -104,5 +95,5 @@ Sinta-se à vontade para clonar o repositório, testar os exemplos, criar pull r
 Desenvolvido com 💻 e ☕ por César Henrique
 
 🔗 LinkedIn
-🔗 GitHub
 
+🔗 GitHub
