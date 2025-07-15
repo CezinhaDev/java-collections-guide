@@ -1,86 +1,29 @@
-Java Collections: List, Set e Map
-Este projeto demonstra, com exemplos práticos, como funcionam as principais coleções do Java: List, Set e Map.
-Ideal para quem está aprendendo sobre estruturas de dados e deseja entender as diferenças no armazenamento e manipulação de elementos.
+✨ Dominando as Coleções Java: List, Set e Map ✨
+Este projeto é um guia prático para entender as principais coleções do Java: List, Set e Map. Ideal para quem está começando a aprender sobre estruturas de dados e quer visualizar as diferenças no armazenamento e manipulação de elementos.
 
-Funcionalidades
-List: aceita elementos duplicados e mantém a ordem de inserção.
+🚀 Funcionalidades Apresentadas
+Explore as características únicas de cada coleção:
 
-Set: não permite duplicatas e não garante ordem.
+List: Aceita elementos duplicados e mantém a ordem de inserção. Perfeito para sequências onde a posição importa.
 
-Map: estrutura de chave-valor; não permite chaves duplicadas, mas permite valores duplicados.
+Set: Não permite duplicatas e não garante ordem. Ideal para coleções de elementos únicos.
 
-O que você vai aprender
-Inserção e acesso de dados com List
+Map: Uma poderosa estrutura de chave-valor. Não permite chaves duplicadas, mas permite valores duplicados. Excelente para mapear informações.
 
-Garantia de unicidade com Set
+🎯 O Que Você Vai Aprender
+Com este projeto, você vai:
 
-Organização de dados com Map (chave-valor)
+Inserir e acessar dados de forma eficiente com List.
 
-Impressão no console com clareza
+Garantir a unicidade de elementos usando Set.
 
-Diferenças entre ArrayList, HashSet e HashMap
+Organizar dados de forma intuitiva com Map (chave-valor).
 
-Exemplo de uso no console
+Realizar a impressão no console com clareza para visualizar os resultados.
+
+Compreender as diferenças fundamentais entre ArrayList, HashSet e HashMap.
+
+🔍 Exemplos de Uso no Console
+Veja como as coleções se comportam na prática:
+
 List (ArrayList)
-List<String> funcionarios = new ArrayList<>();
-funcionarios.add("João");
-funcionarios.add("Maria");
-funcionarios.add("João"); // duplicado permitido
-System.out.println(funcionarios);
-Saída esperada:
-
-[João, Maria, João]
-Set (HashSet)
-
-Set<String> produtos = new HashSet<>();
-produtos.add("Notebook");
-produtos.add("Mouse");
-produtos.add("Teclado");
-produtos.add("Mouse"); // duplicado ignorado
-System.out.println(produtos);
-Saída esperada (ordem pode variar):
-
-[Notebook, Mouse, Teclado]
-
-Map (HashMap)
-
-Map<Integer, String> clientes = new HashMap<>();
-clientes.put(1, "Carlos");
-clientes.put(2, "Ana");
-clientes.put(3, "Carlos"); // valor duplicado permitido
-System.out.println(clientes.get(1));
-Saída esperada:
-Carlos
-
-Tecnologias utilizadas
-Java 17+
-
-IDEs: IntelliJ IDEA, Eclipse ou VSCode
-
-Execução via terminal (console)
-
-Estrutura do projeto
-
-collections-java/
-├── Principal.java
-└── README.md
-Aprendizados
-Diferenças entre List, Set e Map
-
-Como lidar com elementos duplicados
-
-Visualização e testes no console
-
-Boas práticas no uso das coleções Java
-
-Contribuição
-Contribuições são muito bem-vindas!
-Sinta-se à vontade para clonar o repositório, testar os exemplos, criar pull requests ou abrir issues com sugestões.
-
-Contato
-Desenvolvido por César Henrique
-
-LinkedIn: https://www.linkedin.com/in/césar-henrique
-
-GitHub: https://github.com/CezinhaDev
-
