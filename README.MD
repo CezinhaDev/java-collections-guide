@@ -41,14 +41,9 @@ funcionarios.add("João"); // Duplicado permitido e ordem preservada
 System.out.println(funcionarios);
 Saída esperada:
 
-csharp
-Copiar
-Editar
 [João, Maria, João]
 🚫 Set (HashSet)
-java
-Copiar
-Editar
+
 Set<String> produtos = new HashSet<>();
 produtos.add("Notebook");
 produtos.add("Mouse");
@@ -58,14 +53,9 @@ produtos.add("Mouse"); // Duplicata ignorada automaticamente
 System.out.println(produtos);
 Saída esperada (ordem pode variar):
 
-arduino
-Copiar
-Editar
 [Notebook, Mouse, Teclado]
 🔑 Map (HashMap)
-java
-Copiar
-Editar
+
 Map<Integer, String> clientes = new HashMap<>();
 clientes.put(1, "Carlos");
 clientes.put(2, "Ana");
@@ -74,9 +64,6 @@ clientes.put(3, "Carlos"); // Valores duplicados OK, mas chaves únicas!
 System.out.println(clientes.get(1));
 Saída esperada:
 
-nginx
-Copiar
-Editar
 Carlos
 🛠️ Tecnologias Utilizadas
 ☕ Java: Versão 17 ou superior
@@ -86,8 +73,7 @@ Carlos
 📦 Execução: Via terminal/console para testes rápidos e objetivos
 
 📂 Estrutura do Projeto
-Copiar
-Editar
+
 collections-java/
 ├── Principal.java
 └── README.md
